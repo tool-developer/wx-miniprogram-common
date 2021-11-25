@@ -1,0 +1,52 @@
+{
+  "name": "@tool-developer/wx-miniprogram-common",
+  "version": "0.0.1",
+  "description": "wx miniprogram common util libary",
+  "main": "index.js",
+  "scripts": {
+    "lerna": "lerna",
+    "test": "jest",
+    "clean": "lerna run clean",
+    "build": "lerna run build",
+    "publish-canary": "lerna publish prerelease --preid canary --force-publish",
+    "publish-stable": "lerna publish --force-publish",
+    "i": "lerna run i",
+    "l": "lerna run l",
+    "nl": "lerna run nl",
+    "pl": "lerna run pl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tool-developer/wx-miniprogram-common.git"
+  },
+  "keywords": [
+    "wx",
+    "wx miniprogram",
+    "wx-miniprogram",
+    "wx common utils"
+  ],
+  "author": "@tool-developer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tool-developer/wx-miniprogram-common/issues"
+  },
+  "homepage": "https://github.com/tool-developer/wx-miniprogram-common#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@tool-developer/wx-unit": "^0.0.1-canary.1",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.0.6",
+    "lerna": "^4.0.0",
+    "release": "^6.3.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.52.7",
+    "rollup-plugin-multi-input": "^1.3.1"
+  }
+}

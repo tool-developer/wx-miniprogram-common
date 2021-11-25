@@ -1,0 +1,25 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.0.1",
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        ".gitignore",
+        "*.log",
+        "*.md"
+      ],
+      "registry": "https://registry.npmjs.org",
+      "allowBranch": [
+        "main"
+      ]
+    },
+    "bootstrap": {
+      "ignore": "src",
+      "npmClientArgs": [
+        "--no-package-lock"
+      ]
+    }
+  }
+}
